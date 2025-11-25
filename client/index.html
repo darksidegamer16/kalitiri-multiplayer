@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>KaliTiri — Multiplayer Test</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>KaliTiri — Multiplayer</h1>
+    </header>
+
+    <section class="lobby">
+      <input id="name" placeholder="Your name (optional)" />
+      <input id="room" placeholder="Room ID (same for all players)" value="test1" />
+      <button id="joinBtn">Join Room</button>
+      <div id="playersInfo"></div>
+    </section>
+
+    <section class="gameArea">
+      <div class="leftPanel">
+        <div id="scores"></div>
+        <div id="powerhouseArea"></div>
+      </div>
+
+      <main>
+        <div id="playedArea"><h3>Played Cards</h3><div id="playedCards"></div></div>
+        <div id="handAreaWrap">
+          <h3>Your Hand</h3>
+          <div id="hand"></div>
+        </div>
+      </main>
+
+      <aside class="rightPanel">
+        <div id="info"></div>
+        <div id="log"></div>
+      </aside>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
