@@ -1,6 +1,6 @@
 // client/script.js
 const SERVER = "http://localhost:3000"; // change when deployed
-const socket = io(SERVER);
+const socket = io("https://kalitiri-multiplayer.onrender.com");
 
 let myId = "";
 let currentRoom = "";
